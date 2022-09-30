@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна Алексеева](https://up.htmlacademy.ru/htmlcss/35/user/859705).
-* Наставник: `Неизвестно`.
+* Наставник: `Егор Глебов. https://htmlacademy.ru/profile/beast`.
 
 ---
 
