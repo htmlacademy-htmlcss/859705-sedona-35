@@ -387,10 +387,6 @@ ul {
   background-size: cover;
 }
 
-/*.offer-letter-catalog {
-  color: #000;
-}*/
-
 .offer-letter-container {
   width: 684px;
   display: flex;
@@ -924,7 +920,7 @@ ul {
 }
 
 
-/** common fix */
+/** common */
 .visually-hidden {
   display: none;
 }
