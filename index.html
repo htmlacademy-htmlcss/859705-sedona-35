@@ -18,7 +18,7 @@
             <a class="navigation-menu-link navigation-menu-link-active" href="index.html" >Главная</a>
           </li>
           <li class="navigation-menu-item">
-            <a class="navigation-menu-link" href="about_sedona.html">О Седоне</a>
+            <a class="navigation-menu-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-menu-item">
             <a class="navigation-menu-link" href="catalog.html">Гостиницы</a>
@@ -103,7 +103,7 @@
         <section class="search-hotels">
           <h2 class="search-hotels-title">Заинтересовались?</h2>
           <p class="search-hotels-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button button-brown search-button" href="#">Поиск гостиницы в Седоне</a>
+          <button class="button button-brown search-button" href="#"><label for="modal-search">Поиск гостиницы в Седоне</label></a>
         </section>
       </div>
     </main>
@@ -116,7 +116,7 @@
             <form class="offer-letter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="offer-letter-email" class="visually-hidden">Email</label>
               <input class="page-input page-input-left offer-letter-input" placeholder="Ваш e-mail" type="email" name="offer-letter-email" id="offer-letter-email" required>
-              <button class="button offer-letter-button" type="submit">
+              <button class="button button-blue button-right offer-letter-button" type="submit">
                 <span>Подписаться</span>
               </button>
             </form>
@@ -150,5 +150,57 @@
         </section>
       </div>  
     </footer>
+    <div class="modals">
+      <input type="checkbox" id="modal-search">
+      <div class="modals-overlay">
+        <div class="modal-search">
+          <div class="modal-search-title">Поиск гостиницы в Седоне</div>
+          <div class="modal-search-row">
+            <label for="date-in" class="modal-search-label">Дата заезда:</label>
+            <div class="modal-search-input-box">
+              <span class="modal-search-input-icon"></span>
+              <input id="date-in" class="page-input page-input-radius modal-search-input" type="text" value="27 апреля 2020">
+              <span class="modal-search-input-note modal-search-input-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </div>
+          <div class="modal-search-row">
+            <label for="date-out" class="modal-search-label">Дата выезда:</label>
+            <div class="modal-search-input-box">
+              <span class="modal-search-input-icon"></span>
+              <input id="date-out" class="page-input page-input-radius modal-search-input" type="text" value="1 сентября 2023">
+              <span class="modal-search-input-note">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+          </div>
+          <div class="modal-search-row">
+            <div class="modal-search-column">
+              <label for="adults-number" class="modal-search-label">Взрослые:</label>
+              <div class="modal-search-input-box">
+                <span class="modal-search-input-spinner-minus"></span>
+                <input id="adults-number" class="page-input page-input-radius modal-search-input modal-search-input-spinner" type="number" value="2">
+                <span class="modal-search-input-spinner-plus"></span>
+              </div>
+            </div>
+            <div class="modal-search-column">
+              <label for="kinder-number" class="modal-search-label">
+                Дети:<span class="modal-search-label-info"></span>
+                <div class="popover">
+                  <div class="popover-content">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </div>
+                  <span class="popover-arrow"></span>
+                </div>
+              </label>
+              <div class="modal-search-input-box">
+                <span class="modal-search-input-spinner-minus"></span>
+                <input id="kinder-number" class="page-input page-input-radius modal-search-input modal-search-input-spinner" type="number" value="2">
+                <span class="modal-search-input-spinner-plus"></span>
+              </div>
+            </div>
+          </div>
+          <button href="#" class="button button-blue modal-search-button">Найти</button>
+          <label for="modal-search" class="modal-search-close"></label>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
