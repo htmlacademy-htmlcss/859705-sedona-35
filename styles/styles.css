@@ -303,8 +303,6 @@ ul {
   background-color: rgba(0, 0, 0, 0.3);
   top: calc(100% + 30px);
   left: calc((100% - 60px)/2);
-  /*left: 50%;
-  transform: translateX(-50%);*/
 }
 
 .advantages-item-with-icon .advantages-title {
