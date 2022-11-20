@@ -37,6 +37,18 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
+.navigation-list,
+.breadcrumbs,
+.catalog-filter-list,
+.catalog-list,
+.catalog-pagination,
+.contacts-social-list,
+.advantages-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* Pages */
 
 .page-header {
@@ -268,12 +280,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin: 30px 0 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .advantages-list {
@@ -1421,6 +1427,7 @@ ul {
   left: -60%;
   padding: 15px 0 0;
   z-index: 10;
+  display: flex;
   box-sizing: border-box;
 }
 
