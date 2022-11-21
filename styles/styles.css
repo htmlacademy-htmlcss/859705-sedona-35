@@ -268,12 +268,13 @@ body {
 }
 
 .features-title {
+  margin: 0 0 32px;
+  padding: 0 29px;
   text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   position: relative;
-  margin: 0 0 32px;
   text-transform: uppercase;
 }
 
@@ -327,7 +328,7 @@ body {
 }
 
 .advantages-item-with-separator {
-  padding: 103px 85px 120px;
+  padding: 103px 85px 121px;
 }
 
 .advantages-item-with-icon {
@@ -376,7 +377,8 @@ body {
 
 .search-hotels {
   width: 592px;
-  margin: 96px auto;
+  margin: 0 auto;
+  padding: 97px 0;
   text-align: center;
   background: #ffffff;
   display: flex;
@@ -484,7 +486,7 @@ body {
 }
 
 .contacts {
-  padding: 40px 70px;
+  padding: 40px 70px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -492,12 +494,14 @@ body {
 }
 
 .contacts-social {
-  height: 40px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts-social-list {
   max-width: 142px;
-  height: 100%;
+  height: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -565,7 +569,7 @@ body {
 /** CATALOG **/
 
 .catalog-header {
-  padding: 35px 70px;
+  padding: 35px 70px 58px;
   background: url("../images/catalog/banner-filtr.jpeg") center no-repeat, #82b3d3;
   background-repeat: no-repeat;
   background-size: cover;
@@ -654,7 +658,7 @@ body {
 }
 
 .catalog-filter-total {
-  max-width: 549px;
+  max-width: 560px;
 }
 
 .catalog-filter-group {
@@ -724,8 +728,10 @@ body {
 }
 
 .catalog-form-button {
-  padding: 0 50px;
+  padding: 0 45px;
   height: 36px;
+  font-size: 16px;
+  line-height: 20px;
   box-sizing: border-box;
 }
 
@@ -739,9 +745,7 @@ body {
 }
 
 .catalog-result {
-  padding: 40px 70px;
-  border-bottom: 1px solid #e6e6e6;
-  box-sizing: border-box;
+  padding: 0 70px;
 }
 
 .catalog-sort {
@@ -803,6 +807,7 @@ body {
 }
 
 .catalog-sort-box {
+  min-width: 292px;
   height: 48px;
   margin: 0 70px 0 0;
   position: relative;
@@ -836,9 +841,12 @@ body {
 }
 
 .catalog-list {
+  padding: 40px 0 38px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
 }
 
 .catalog-item {
@@ -851,7 +859,7 @@ body {
 .catalog-item-image {
   width: 100%;
   height: 212px;
-  margin: 0 0 16px;
+  margin: 0 0 10px;
 }
 
 .catalog-item-title {
@@ -922,7 +930,7 @@ body {
 
 
 .catalog-navigation {
-  padding: 40px 70px;
+  padding: 38px 70px 60px;
   box-sizing: border-box;
 }
 
@@ -1196,7 +1204,7 @@ body {
 
 .input-range {
   -webkit-appearance: none;
-  margin: 36px 0 0;
+  margin: 40px 0 0;
   width: 100%;
   height: 4px;
 }
